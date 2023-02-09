@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div.relative {
+        position: relative;
+        width: 400px;
+        height: 200px;
+        border: 3px solid #73ad21;
+      }
+
+      div.absolute {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        height: 50px;
+        border: 3px solid #73ad21;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>position: absolute;</h2>
+
+    <p>
+      Een element met positie: absolute; is gepositioneerd ten opzichte van de dichtstbijzijnde
+      gepositioneerde voorouder (ipv ten opzichte van viewport):
+    </p>
+
+    <div class="relative">
+      Dit div-element heeft positie: relative;
+      <div class="absolute">Dit div-element has position: absolute;</div>
+    </div>
+  </body>
+</html>
