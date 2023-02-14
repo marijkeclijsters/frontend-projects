@@ -40,7 +40,15 @@ const h3ElementIngredientRecept = document.createElement('h3');
 h3ElementIngredientRecept.innerText = "Ingrediënten";
 body.appendChild(h3ElementIngredientRecept);
 
+const olElement = document.createElement('ol');
+body.appendChild(olElement);
 
+const ingrediënten =  ["varkensvlees", "ajuin", "bloem", "water"]
+for (let i = 0; i < 4; i++ ){
+    const liIngredientElement = document.createElement('li');
+    liIngredientElement.innerText = ingrediënten[i];
+    olElement.appendChild(liIngredientElement);
+};
 
 const h3ElementBereidingRecept = document.createElement('h3');
 h3ElementBereidingRecept.innerText = "Bereiding";
