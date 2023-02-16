@@ -18,8 +18,6 @@ setInterval(() =>{
 
 }, 100);
 
-
-
 setInterval(() =>{
     for (let i = 0; i < products.length; i++) {
          productKnopje.click();
