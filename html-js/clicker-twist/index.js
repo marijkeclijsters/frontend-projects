@@ -3,7 +3,7 @@ const countElUpgrade = document.querySelector("#upgrade");
 let number = 0;
 let upgradeCounter = 0;
 const button1 = document.querySelector('#button1');
-
+//div data-counter="score"></div>
 const button2 = document.querySelector('#button2');
 button2.disabled= true;
 
@@ -14,7 +14,6 @@ if (number < 10) {
 } else  {
   button3.disabled = false;
 }
-
 
 function plusOne() {
   number++;
@@ -50,10 +49,10 @@ function upgrade() {
 }
 
 
-// setInterval(() =>{
-//   plusOne();
-//   plusTwo();
-//   upgrade();
+setInterval(() =>{
+  plusOne();
+  plusTwo();
+  upgrade();
       
 
-//  }, 3000);
+ }, 3000);
