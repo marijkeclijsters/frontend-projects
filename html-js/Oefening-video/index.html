@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #lijst {
+        background-color: deeppink;
+      }
+      .list-item {
+        background-color: blue;
+        color: white;
+      }
+    </style>
+    <script src="./index.js" defer>
+
+    </script>
+    <!-- <script >
+      // function doeActie() {
+      const doeActie = () => {
+        const ulElement = document.querySelector("#lijst");
+
+        const newLiElement = document.createElement("li");
+        newLiElement.textContent = "vier";
+        newLiElement.classList.add("list-item");
+
+        ulElement.appendChild(newLiElement);
+        console.log(newLiElement);
+
+        const firstElement = ulElement.querySelector("li");
+        firstElement.remove();
+      };
+    </script> -->
+  </head>
+
+  <body>
+    <div class="header">Een header</div>
+    <div class="nav">
+      <a href="#section1">Ga naar sectie 1</a>
+      <a href="#section2">Ga naar sectie 2</a>
+    </div>
+    <div id="section1">
+      <h1>Sectie 1</h1>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet
+        sem erat. Phasellus pellentesque nisl lorem, a lacinia dolor lacinia at.
+        Maecenas interdum sapien ut tellus porttitor pellentesque. Nam nec risus
+        vitae lacus porttitor porta. Fusce vitae dolor vel lorem aliquet
+        porttitor varius ut odio. Nulla vel neque mi. Quisque et magna ut libero
+        semper luctus. Phasellus interdum libero vel dolor tincidunt pulvinar.
+        Curabitur commodo condimentum facilisis. Ut tempus tortor in sodales
+        dapibus. Nam suscipit nisl non purus aliquam ornare. Donec vestibulum
+        dignissim lorem, vitae venenatis enim finibus vel. Nulla scelerisque
+        laoreet ligula et hendrerit. Sed ac porta ligula.
+      </div>
+    </div>
+    <div id="section2">
+      <h1>Sectie 2</h1>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet
+        sem erat. Phasellus pellentesque nisl lorem, a lacinia dolor lacinia at.
+        Maecenas interdum sapien ut tellus porttitor pellentesque. Nam nec risus
+        vitae lacus porttitor porta. Fusce vitae dolor vel lorem aliquet
+        porttitor varius ut odio. Nulla vel neque mi. Quisque et magna ut libero
+        semper luctus. Phasellus interdum libero vel dolor tincidunt pulvinar.
+        Curabitur commodo condimentum facilisis. Ut tempus tortor in sodales
+        dapibus. Nam suscipit nisl non purus aliquam ornare. Donec vestibulum
+        dignissim lorem, vitae venenatis enim finibus vel. Nulla scelerisque
+        laoreet ligula et hendrerit. Sed ac porta ligula.
+      </div>
+    </div>
+    <br />
+    <div class="footer">Een footer</div>
+    <ul id="lijst">
+      <li class="list-item">een</li>
+      <li>twee</li>
+      <li class="list-item">drie</li>
+    </ul>
+    <button onclick="doeActie()">doe actie</button>
+  </body>
+</html>
